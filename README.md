@@ -17,7 +17,7 @@ The chatbot leverages:
 2. **Chatbot**:
    - Supports context-aware conversations.
    - Answers FAQs using the private knowledge base.
-   - Uses AWS Bedrock Nova Lite for reasoning.
+   - Uses AWS Bedrock for reasoning.
    - Equipped with tools for:
      - Knowledge Base Search.
      - Internet Search.
@@ -48,7 +48,25 @@ The chatbot leverages:
    AWS_ACCESS_KEY_ID=<your-access-key>
    AWS_SECRET_ACCESS_KEY=<your-secret-key>
    AWS_REGION=<your-region>
+   AWS_MODEL_EMBEDDINGS=<your-model-embeddings>
+   AWS_MODEL_CHAT='your-model'
    ```
+
+### AWS Bedrock Setup
+You can reference the AWS documentation: https://docs.aws.amazon.com/bedrock/latest/userguide/model-access-modify.html
+
+1. Navigate AWS Bedrock.
+![navigate_aws_bedrock_image](./image/navigate_aws_bedrock_image.png)
+
+2. Choose the Model Access page, choose Modify model access to request model you want to use.
+![model_access](./image/model_access.png)
+
+3. Select the model you want to request and click 'Next'. The AWS limits the number of models in each region.
+![choose_model](./image/choose_model.png)
+4. You can review and submit to request model.
+![submit_model](./image/submit_model.png)
+5. If your request is successful, the Access status changes to Access granted.
+![verify_request_model](./image/verify_request_model.png)
 
 ### Running the Project
 1. Ensure the `BonBon FAQ.pdf` file is located in the `data/` directory.
