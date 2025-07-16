@@ -30,20 +30,33 @@ The chatbot leverages:
 - **Miniconda3**
 
 ### Environment Setup
-1. Create a Conda environment:
-   ```bash
-   conda create -n langchain python=3.11
+1. Download the latest version
+    ```bash
+   wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
    ```
-2. Activate the environment:
+2. Install Miniconda
+   ```bash
+    - bash ~/Miniconda3-latest-Linux-x86_64.sh
+    - source ~/.bashrc
+   ```
+3. Test command
+    ```bash
+    conda list
+   ```
+4. Create a Conda environment:
+   ```bash
+   conda create -n langchain python=3.11`
+   ```
+5. Activate the environment:
    ```bash
    conda activate langchain-training
    ```
-3. Install required packages:
+6. Install required packages:
    ```bash
    pip install langchain langchain-aws boto3 chromadb pypdf python-dotenv langchain-community
    ```
-4. Creating an IAM User and Generating Credentials in the AWS Console
-5. Set environment variables in a `.env` file:
+7. Creating an IAM User and Generating Credentials in the AWS Console
+8. Set environment variables in a `.env` file:
    ```plaintext
    AWS_ACCESS_KEY_ID=<your-access-key>
    AWS_SECRET_ACCESS_KEY=<your-secret-key>
