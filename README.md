@@ -72,15 +72,5 @@ You can reference the AWS documentation: https://docs.aws.amazon.com/bedrock/lat
 1. Ensure the `BonBon FAQ.pdf` file is located in the `data/` directory.
 2. Follow the interactive chatbot instructions.
 
-## Assignments
-
-### Assignment 1: Document Indexing
-- Index the content of `BonBon FAQ.pdf` into a local Chroma vector database.
-- Use embedding models like `amazon.titan-embed-text-v2:0`.
-
-### Assignment 2: Building Chatbot
-- Build a chatbot using LangChain's Conversational ReAct agent.
-- Equip the chatbot with tools for knowledge base and internet search.
-- Ensure the chatbot provides answers with source file and page references.
 
 
